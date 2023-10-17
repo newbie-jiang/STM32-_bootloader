@@ -1,0 +1,13 @@
+
+; Linker Control File (scatter-loading)
+;
+LR_ROM 0x20000000 0x0000F000 { ; load region size_region
+ ER_ROM 0x20000000 0x0000F000 { ; load address = execution address
+ *.o (RESET, +First)
+ *(InRoot$$Sections)
+ * (+RO +XO)
+ }
+ RW_IRAM1 0x2000F000 0x00002000 { ; RW data
+ .ANY (+RW +ZI)
+ }
+}
