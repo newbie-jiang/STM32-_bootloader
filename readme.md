@@ -1,6 +1,6 @@
 ## 
 
-## 基于STM32H750XB  适用于已有QSPI下载算法的BootLoader(非QSPI XIP)
+## 基于STM32H750XB  适用于已有QSPI下载算法的BootLoader
 
 Bootloader保存在内部flash上 ，通过下载算法将APP下载到QSPI   
 
